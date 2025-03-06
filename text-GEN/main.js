@@ -17,7 +17,7 @@ const generateText = (e) => {
   e.preventDefault();
 
   const inputVal = +amountInput.value;
-  // بررسی ورودی و اعلام خطا در صورت عدم وارد کردن مقدار
+ 
   if (!inputVal || isNaN(inputVal)) {
     showError("چیزی وارد نشده!");
     return;
@@ -33,13 +33,13 @@ const generateText = (e) => {
   );
   textResult.innerHTML = finalText;
 };
-// تعریف عملگر کپی کردن
+
 const copyText = () => {
-  // انتخاب محتوای متن نهایی
+  
   textResult.select();
-  // اجرای عملیات کپی کردن
+
   document.execCommand("copy");
-  // حذف انتخاب متن
+
   window.getSelection().removeAllRanges();
 };
 
