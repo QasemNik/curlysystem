@@ -43,6 +43,6 @@ const copyText = () => {
   window.getSelection().removeAllRanges();
 };
 
-// اضافه کردن رویداد کلیک به دکمه کپی کردن
+
 copyBtn.addEventListener("click", copyText);
 generateBtn.addEventListener("click", generateText);
